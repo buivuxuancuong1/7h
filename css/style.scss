@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    .header{
+        min-height: 100vh;
+        width: 100%;
+        background-image: url("https://chiase24.com/wp-content/uploads/2022/02/Tong-hop-cac-hinh-anh-background-dep-nhat-21.jpg");
+        background-position: center;
+        background-size: cover;
+        position: relative;
+
+        nav{
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+
+            img{
+                width: 150px;
+            }
+
+            .nav-links{
+                flex: 1;
+                text-align: right;
+                
+                ul {
+
+                    li{
+                        list-style: none;
+                        display: inline-block;
+                        padding: 8px 12px;
+                        position: relative;
+
+                        a{
+                            color: white;
+                            text-decoration: none;
+                            font-size: 13px;
+                        }
+                    }
+
+                    li:after{
+                        content: "";
+                        width: 0%;
+                        height: 2px;
+                        background-color: #f44336;
+                        display: block;
+                        margin: auto;
+                        transition: 0.5s;
+                    }
+                    li:hover::after{
+                        width: 100%;
+                    }
+                }
+
+                .fa-solid{
+                    display: none;
+                }
+            }
+            .fa-solid{
+                display: none;
+            }
+        }
+
+        .text-box{
+            width: 90%;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            h1{
+                font-size: 62px;
+            }
+
+            p{
+                margin: 10px 0 40px;
+                font-size: 14px;
+                color: white;
+            }
+
+            .hero-btn{
+                display: inline-block;
+                text-decoration: none;
+                color: white;
+                border: 1px solid white;
+                padding: 12px 34px;
+                font-size: 13px;
+                background: transparent;
+                position: relative;
+                transition: 1s;
+            }
+
+            .hero-btn:hover{
+                border: 1px solid #f44336;
+                background-color: #f44336;
+                transition: 1s;
+            }
+        }
+    }
+
+    .course{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+
+        h1{
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        p{
+            color: #666;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+        }
+
+        .roww{
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+
+            .course-col{
+                flex-basis: 31%;
+                background-color: #fff3f3;
+                border-radius: 10px;
+                margin-bottom:5% ;
+                padding: 20px 20px;
+                box-sizing: border-box;
+                h3{
+                    text-align: center;
+                    font-weight: 600;
+                    margin: 10px 0;
+                }
+            }
+
+            .course-col:hover{
+                box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+            }
+        }
+    }
+
+    .campus{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        padding-top: 50px;
+
+        .roww{
+            display: flex;
+            justify-content: space-between;
+            .campus-col{
+                flex-basis: 32%;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                margin-top: 30px;
+                position: relative;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    height: 150%;
+                    display: block;
+                }
+            }
+
+            .layer{
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: 1s;
+
+                h3{
+                    width: 100%;
+                    font-weight: 600;
+                    color: white;
+                    font-size: 26px;
+                    bottom: 0;
+                    transform: translateX(-50%);
+                    position: absolute;
+                    opacity: 0;
+                    left: 0;
+                    transition: 0.5s;
+                }
+            }
+
+            .layer:hover{
+                background: rgba(226,0,0,0.7);
+
+                h3{
+                    opacity: 1;
+                    bottom: 49%;
+                    left: 50%;
+                }
+            }
+            
+        }
+    }
+
+    .facilities{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+
+        .roww{
+            display: flex;
+            justify-content: space-between;
+            .facilites-col{
+                flex-basis: 31%;
+                border-radius: 10px;
+                margin-bottom: 5%;
+                margin-top: 3%;
+                text-align: left;
+
+                img{
+                    width: 100%;
+                    height: 60%;
+                    border-radius: 10px
+                }
+
+                p{
+                    padding: 0;
+                }
+                h3{
+                    margin-top: 16px;
+                    margin-bottom: 30px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .test{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+
+        .roww{
+            display: flex;
+            justify-content: space-between;
+            .test-col{
+                flex-basis: 47%;
+                border-radius: 10px;
+                margin-bottom: 5%;
+                margin-top: 3%;
+                text-align: left;
+                display: flex;
+                justify-content: space-between;
+                background-color: #fff3f3;
+
+                img{
+                    height: 60px;
+                    border-radius: 50%;
+                    margin: 20px;
+                }
+
+                .test-row{
+                    margin-bottom: 30px;
+                    p{
+                        padding: 0px;
+                        margin-top: 20px;
+                    }
+                    h3{
+                        margin-top: 16px;
+                        
+                        text-align: left;
+                    }
+
+                    .fa-solid{
+                        color: #f44336;
+                    }
+                }
+            }
+        }
+    }
+
+    .cta{
+        margin: 100px AUTO;
+        width: 80%;
+        background-image: url("https://chiase24.com/wp-content/uploads/2022/02/Tong-hop-cac-hinh-anh-background-dep-nhat-21.jpg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        align-items: center;
+        padding: 100px 0 ;
+        text-align: center;
+
+        h1{
+            color: white;
+            padding-bottom: 20px;
+        }
+
+        .hero-btn{
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            transition: 1s;
+            margin-top: 10px;
+        }
+        .hero-btn:hover{
+            border: 1px solid #f44336;
+            background-color: #f44336;
+            transition: 1s;
+        }
+    }
+
+    .footer{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 30px 0;
+        background: rgb(197, 193, 193);
+        h4{
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        p{
+            i{
+                color: red;
+            }
+        }
+
+        .icons{
+            i{
+                margin: 10px;
+                color: #f44336;
+            }
+        }
+    }
+
+
+
+    @media(max-width: 700px){
+            .text-box{
+                h1{
+                    font-size: 20px !important;
+                }
+            } 
+
+            nav{
+                .nav-links{
+                    position: absolute;
+                    background: #f44336;
+                    height: 100vh;
+                    width: 200px;
+                    top: 0;
+                    right: 0px;
+                    text-align: left !important;
+                    z-index: 2;
+                    transition: 1s;
+                    ul{
+                        padding: 30px;
+                        li{
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+
+                    .fa-solid{
+                        display: block !important;
+                        color: white;
+                        margin: 10px;
+                        font-size: 22px;
+                        cursor: pointer;
+                    }
+                }
+
+                .fa-solid{
+                    display: block !important;
+                    color: white;
+                    margin: 10px;
+                    padding-right: 20px;
+                    font-size: 22px;
+                    cursor: pointer;
+                }
+            }
+
+            .course{
+                .roww{
+                    flex-direction: column;
+                }
+            }
+
+            .campus{
+                .roww{
+                    flex-direction: column;
+                }
+            }
+
+
+            .facilities{
+                .roww{
+                    flex-direction: column;
+                }
+            }
+
+            .test{
+                .roww{
+                    flex-direction: column;
+
+                    p{
+                        margin-left: -15px;
+                    }
+                }
+            }
+
+            .cta{
+                h1{
+                    font-size: 20px !important;
+                }
+            } 
+            
+    }
+
+
+
+}
